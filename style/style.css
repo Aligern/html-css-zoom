@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 .debug {
     border: 1px solid red;
@@ -31,7 +31,6 @@ body {
     color: var(--color-white);
 }
 header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -40,19 +39,21 @@ header {
 .btn {
     background-color: #4a4a4a;
     border: none;
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 7px;
+    padding: 10px; 
     font-size: small;
+    align-items: center;
+    margin-left: 5px;
 }
 main {
     padding: 20px;
-    margin-top: 30px;
     gap: 10px;
-    height: calc(100% - 100);
+    height: calc(100% - 100px);
     width: 100%;
     overflow-y: auto;
 }
 .user-box {
+    position: relative;
     width: calc(100% / 7 - 10px);
     aspect-ratio: 16 / 9;
     background-color: #4bc800;
@@ -63,11 +64,22 @@ main {
     width: 100%;
     height: 100%;
 }
+.box-badge {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.39);
+    bottom: 0px;
+    left: 0;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+}
+
 /* Footer */
 #toolbar {
     background-color: var(--color-grey);
     height: 70px;
 }
+
 /* Flex Utilities */
 .d-flex {
     display: flex;
