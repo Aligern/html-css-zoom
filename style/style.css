@@ -72,13 +72,22 @@ main {
     padding: 5px;
 }
 
+#red {
+    color: #ff0000;
+    background-color: #4a4a4a;
+    height: 100%;
+}
+#green {
+    color: var(--color-green);
+}
+
 /* Footer */
 #toolbar {
-    background-color: var(--color-grey);
+    background-color: var(--color-darkgray);
     height: 70px;
 }
 
-#toolbar div{ 
+.f-margin {
     margin: 5px;
 }
 
