@@ -24,20 +24,31 @@ body {
     background-color: var(--color-black);
     color:var(--color-white)
 }
-header {
-    width: 100%;
-    height: 50px;
-}
 #app {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--color-darkgray);
     color: var(--color-white);
 }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+}
+.btn {
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: small;
+}
 main {
-    gap: 10px;
     padding: 20px;
-    height: calc(100% - 120);
+    margin-top: 30px;
+    gap: 10px;
+    height: calc(100% - 100);
     width: 100%;
     overflow-y: auto;
 }
@@ -45,16 +56,18 @@ main {
     width: calc(100% / 7 - 10px);
     aspect-ratio: 16 / 9;
     background-color: #4bc800;
-    min-width: 300px;
+    min-width: 200px;
 }
-
+.user-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 /* Footer */
-
 #toolbar {
     background-color: var(--color-grey);
     height: 70px;
 }
-
 /* Flex Utilities */
 .d-flex {
     display: flex;
