@@ -85,6 +85,7 @@ main {
 #toolbar {
     background-color: var(--color-darkgray);
     height: 70px;
+    overflow-y: auto;
 }
 
 .f-margin {
